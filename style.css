@@ -1,0 +1,239 @@
+@font-face {
+    font-family: General Sans;
+    src: url(GeneralSans-Regular.otf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: "General Sans";
+    cursor:default;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+#loader{
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+    position: fixed;
+    z-index: 1000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#loader h5{
+    font-weight: 500;
+    font-size: 1.3vw;
+    color: black;
+}
+#mini-circle{
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    border-radius: 50%;
+    transition: all 0.2s ease-out;
+    mix-blend-mode: difference;
+    
+}
+
+#main{
+    width: 100%;
+    background-color: black;
+}
+/* ----- HERO ----- */
+#hero{
+    height: 100vh;
+    width: 100%;
+}
+#nav{
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 3vw;
+}
+#nav h3{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+.bounding .bounding-elem{
+    transform: translateY(100%);
+}
+#hero-main-heading{
+    margin: 3vw 0vw 0vw 3vw;
+    opacity: 0.7;
+}
+#hero-main-heading h1{
+    font-size: 9vw;
+    line-height: 1;
+    font-weight: 900;
+    
+}
+#hero-main-heading-part2{
+    width: fit-content;
+    text-align: right;
+    margin-left: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+#hero-part3{
+    margin: 3vw 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+#hero-part3 h5{
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+#hero-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6vw 3vw;
+}
+#hero-footer h5, #hero-footer i{
+   font-size: 1.3vw;
+   font-weight: 500;
+}
+#arrow-circles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3vw;
+}
+#arrow-circles .circle{
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----- PAGE 02 ----- */
+#page-2{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    padding: 4vw 10vw 0vw 3vw;
+}
+.elem{
+    width: 100%;
+    border-top: 1px solid grey;
+    padding: 2vw 0vw 2vw 0vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.elemlast{
+    border-bottom: 1px solid grey;
+}
+.elem h1{
+    text-transform: uppercase;
+    font-size: 6vw;
+    opacity: 0.7;
+}
+.elem img{
+    position: absolute;
+    z-index: 999;
+    height: 120%;
+    opacity: 0;
+    /* transform: translate(-50%,-50%); */
+    /* display: none; */
+}
+
+/* ----- ABOUT ----- */
+#about{
+    width: 100%;
+    background-color: black;
+    padding: 8vw 10vw 8vw 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+#about img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#about-text{
+    width: 25rem;  
+    text-transform: uppercase;
+}
+#about-text h5{
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+#about-text p{
+    font-size:1.1vw;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+#about-text a{
+    text-decoration: none;
+    padding: .8vw 1.5vw;
+    border: 1px solid white;
+    border-radius: 100px;
+}
+
+/* ----- SUBSCRIBE ----- */
+#subscribe{
+    width: 100%;
+    padding: 5vw 3vw;
+    text-transform: uppercase;
+}
+#subscribe h5{
+    font-size: 1.2vw;
+    opacity: 0.7;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+#subscribe h3{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+/* ----- FOOTER ----- */
+#footer{
+    width: 100%;
+    padding: 2vw 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer h5{
+    font-size: 1.2vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#footer-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#footer-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
